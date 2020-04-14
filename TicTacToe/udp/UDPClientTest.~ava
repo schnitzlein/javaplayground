@@ -1,0 +1,23 @@
+/**
+  *
+  * Beschreibung
+  *
+  * @version 1.0 vom 15.06.2011
+  * @author
+  */
+
+public class UDPClientTest {
+
+  public static void main(String[] args) {
+    UDPClient c = new UDPClient();
+    c.start();
+    try {
+      c.sleep(3000);
+      c.interrupt();
+      System.out.println("Thread unterbrochen");
+    } catch(InterruptedException ie){
+
+    }
+
+  }
+}
